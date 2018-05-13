@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-odandb-toastplugin" version="0.0.1">
+	<name>
+		ToastPlugin
+	</name>
+	<description>
+		A Cordova plugin that allows users to display simple toast messages at the bottom of the screen.
+	</description>
+	<engines>
+		<engine name="cordova" version=">=4.0.0" />
+	</engines>
+	<js-module src="www/ToastPlugin.js" name="ToastPlugin">
+		<clobbers target="window.plugins.ToastPlugin" />
+	</js-module>
+	<platform name="android">
+		<config-file target="res/xml/config.xml" parent="/*">
+			<feature name="ToastPlugin">
+				<param name="android-package" value="com.odandb.cordova.plugin.toastplugin" />
+			</feature>
+		</config-file>
+		<source-file src="src/android/ToastPlugin.java" target-dir="src/com/odandb/cordova/plugin" />
+	</platform>
+</plugin>

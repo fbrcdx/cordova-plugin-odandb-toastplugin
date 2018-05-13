@@ -1,0 +1,19 @@
+{
+    "name": "cordova-plugin-odandb-toastplugin",
+    "version": "0.0.1",
+    "description": "A Cordova plugin that allows users to display simple toast messages at the bottom of the screen.",
+    "cordova": {
+        "id": "cordova-plugin-odandb-toastplugin",
+        "platforms": [
+            "android"
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/fbrcdx/cordova-plugin-odandb-toastplugin.git"
+    },
+    "engines": {
+        "cordova": ">=4.0.0"
+    },
+    "author": "FCA"
+}
